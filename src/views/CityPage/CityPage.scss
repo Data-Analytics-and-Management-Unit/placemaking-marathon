@@ -1,0 +1,83 @@
+.CityPageHero {
+    width: 100%;
+    .image-panel-container, .carousel, .carousel-inner, .carousel-item {
+        width: 100%;
+    }
+    .carousel-item {
+        img {
+            width: 100%;
+        }
+    }
+    
+    .carousel-indicators {
+        position: static;
+        margin-top: -70px
+    }
+    
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+    
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+    
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+    
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+}
+
+.CityPage {
+    .project-container {
+        margin: 100px 0;
+        text-align: center;
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        h2 {
+            font-size: 2.7rem;
+            font-weight: 600;
+        }
+        p {
+            padding: 20px 170px;
+            font-size: 1.7rem;
+        }
+        .section-container {
+            margin: 60px 0;
+            .team-img {
+                width: 100%;
+            }
+            .team-logo {
+                margin: 40px 0;
+                img {
+                    display: inline-block;
+                    margin: auto;
+                    height: 50%;
+                }
+            }
+            .team-name-container {
+                margin: 50px 0;
+            }
+        }
+        .member-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .tweet-container {
+            
+            .tweet-timeline {
+                width: 40%;
+                height: 800px;
+                overflow: scroll;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
