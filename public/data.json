@@ -1,0 +1,768 @@
+{
+    "Gangtok": {
+        "state": "Sikkim",
+        "projects": [
+            {
+                "name": "Pocket Park for Children in a Market",
+                "code": "P1",
+                "location": "Lal Bazar",
+                "areaLen": "135 sq.m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 3,
+                "noSImages": 2,
+                "description": {
+                    "q1": "The site receives a high footfall since it is located within a shopping area. However, located on a cul-de-sac, the site was used for unauthorized two-wheeler parking and as a dump yard for construction debris and solid waste, posing health risks for residents and visitors. The place also reeked of foul smell, making it highly uncomfortable for shoppers, potentially affecting the sales of the businesses in immediate adjacency. Thus, in consultation with residents and the market association, it was decided to clean up the area and create space for young children to wait and play while their parents shopped in the bazar.",
+                    "q3": "- Creation of enclosed children play space\n- Painting of wall murals around the site",
+                    "q4": "Day 1:\nCollection & removal of debris, installation of railings\nDay 2:\nFlooring at site and demarcation of play area\nDay 3:\nPainting of wall murals and installation of play equipment and benches",
+                    "q5": "Continuous rainfall led to the damage of the work area and painting. A temporary shed with bamboo and tarpaulin was quickly erected to address this challenge.",
+                    "q6": "The city has plans to scale up the idea of low-cost placemaking interventions after feedback, appraisal, and critique of this pilot project.",
+                    "q7": "- Oviya Art Circle (park design)"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Dorjee Laden Bhutia, GSCDL"
+                        },
+                        {
+                            "name": "Deepankar Lama, GSCDL"
+                        },
+                        {
+                            "name": "Binay Lama, GSCDL"
+                        },
+                        {
+                            "name": "Niranjan Kapil, GSCDL"
+                        },
+                        {
+                            "name": "Tseten Lendup Sherpa, GSCDL"
+                        },
+                        {
+                            "name": "Ujina Sherpa, GSCDL"
+                        },
+                        {
+                            "name": "Puskar Adhikari, GSCDL"
+                        },
+                        {
+                            "name": "Pem Uzila, GSCDL"
+                        }
+                    ],
+                    "orgs": [
+                        {
+                            "name": "Sangay Lama"
+                        },
+                        {
+                            "name": "Diwakar lamichaney"
+                        },
+                        {
+                            "name": "Sewon Rai"
+                        },
+                        {
+                            "name": "Shiva Chettri"
+                        },
+                        {
+                            "name": "Harka Manger"
+                        },
+                        {
+                            "name": "Sagar Subba"
+                        }
+                    ]
+                },
+                "cost": 5.36,
+                "images": [
+                    {
+                        "before": "/Gangtok/Gangtok_Project1/Photos/B_Gangtok_Project1_001.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "Imphal": {
+        "state": "Manipur",
+        "projects": [
+            {
+                "name": "New Micro Park from a Dumping Lot",
+                "code": "P1",
+                "location": "New Checkon Traffic Point",
+                "areaLen": "140 sq.m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 10,
+                "noSImages": 8,
+                "description": {
+                    "q1": "The site is a brownfield area located adjacent to diverse residential communities of Tibetans, Hindus and Muslims. Being utilized as a dumping area for solid waste, the site was highly contaminated. The foul smell further detracted pedestrian usage of the junction. Hence, it was envisaged that a park on the site will provide a vibrant and inclusive space for people to interact, enable active pedestrian use, while also making a case for smaller but frequent green sponges to absorb rain water and purify air.",
+                    "q3": "- Removal of waste from dump yard\n- Construction of park using bamboo and brick \n- Creation of play area and plantation beds in the park ",
+                    "q4": "Pre-execution:\nClearing up the garbages and protecting the site.\nDay 1:\nFilling the site with red soil and alluvial soil. Offsite fabrication of custom made modules of wood work.\nDay 2:\nConstruction using brickwork and bamboo. Installation of wood work.\nDay 3:\nPlantation and painting.",
+                    "q5": "The existing site was a garbage disposal area, getting rid of the smell was a huge challenge. The labourers had to work under intense heat as there was no time to develop a temporary shelter around the site. ",
+                    "q6": "This site is a part of the envisaged green belt for the surrounding area. This design concept will be followed throughout the city upon success.",
+                    "q7": "- Imphal Municipal Corporation (waste clearance)\n- NCloud (park design)\n- New Checkon Youth Club (volunteers for transformation and caretaking/maintenance of park)"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Narmashree S. Sanglakpam"
+                        },
+                        {
+                            "name": "Lourembam Derick"
+                        },
+                        {
+                            "name": "Lourembam Tarunkumar"
+                        },
+                        {
+                            "name": "Chabungbam Dennis"
+                        },
+                        {
+                            "name": "Nirmal Kumar Das"
+                        },
+                        {
+                            "name": "Wangkhem Then"
+                        },
+                        {
+                            "name": "Nongmaithem Romen"
+                        },
+                        {
+                            "name": "Nongmaithem Devan"
+                        },
+                        {
+                            "name": "Nongmaithem Kerani"
+                        }
+                    ],
+                    "orgs": [
+                        {
+                            "name": "Dillansana Ningthemcha, New Checkon Youth Club"
+                        }
+                    ]
+                },
+                "cost": 0.4,
+                "images": [
+                    {
+                        "before": "/Imphal/Imphal_Project1/Photos/B_Imphal_Project1_001.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "Jabalpur": {
+        "state": "Madhya Pradesh",
+        "projects": [
+            {
+                "name": "Revitalized Community Park for All Ages",
+                "code": "P1",
+                "location": "Vikas Nagar Park, Vijay Nagar",
+                "areaLen": "3260 sq.m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 13,
+                "noSImages": 14,
+                "description": {
+                    "q1": "Located in the dense residential neighbourhood of Vikas Nagar, the park caters to recreational needs of mixed income groups as well as diverse age groups. However, the park condition had deteriorated over the years due to poor maintenance. This translated to no lighting, overgrowth of weeds, and broken play equipment. Hence, in consultation with local residents, the city decided to revamp the park and make it safe and inclusive for different user groups and transfer the maintenance to the neighbourhood's residents welfare association.",
+                    "q3": "- Repair and installation of lights\n- Construction of shaded platform for floor based exercises and yoga\n- Creation of sensory & nature based play spaces with shaded seating spaces\n- Adding age specific play equipment",
+                    "q4": "Day 1:\nRemoval of weeds and debris, pathway cleaning and construction of benches.\nDay 2:\nPainting of pathway and existing play equipment, construction of multi-purpose platform.\nDay 3:\nInstallation of new play equipment and tree plantation.",
+                    "q5": "",
+                    "q6": "",
+                    "q7": "- WRI India (technical assistant)\n- Bernard van Leer Foundation (technical assistant)\n- RWA and local NGOs (volunteers for transformation )\n- Jabalpur Municipal Corporation (awareness programmes and organizing event)\n- M.P. Police (no objection to events)"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Nidhi Singh Rajput, IAS, Jabalpur Smart City Limited"
+                        },
+                        {
+                            "name": "Sambhav Ayachi, JMC"
+                        },
+                        {
+                            "name": "Arpit Nema, Jabalpur Smart City Limited"
+                        },
+                        {
+                            "name": "Kavish Mishra, Jabalpur Smart City Limited"
+                        },
+                        {
+                            "name": "Smt. Shailja Sulere, Jabalpur Smart City Limited"
+                        }
+                    ],
+                    "orgs": [
+                        {
+                            "name": "Rana, National Service Scheme"
+                        },
+                        {
+                            "name": "Abhilash Pandey"
+                        },
+                        {
+                            "name": "Gajendra Singh, Jabalpur Smart City Limited"
+                        },
+                        {
+                            "name": "Abhishek Dubeyh"
+                        },
+                        {
+                            "name": "Anuj Agrawal, Jabalpur Smart City Limited"
+                        }
+                    ]
+                },
+                "cost": 5.1,
+                "images": [
+                    {
+                        "before": "/Jabalpur/Jabalpur_Project1/Photos/B_Jabalpur_Project1_001.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "Jammu": {
+        "state": "Jammu Kashmir",
+        "projects": [
+            {
+                "name": "Multi-Modal Street Transformation in Old City Market",
+                "code": "P1",
+                "location": "Parade Chowk",
+                "areaLen": "3980 sq.m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 6,
+                "noSImages": 4,
+                "description": {
+                    "q1": "The Parade area, being the hub of business activity in the old city is among the busiest areas of Jammu city. Perpetual traffic jams due to Matadors and unregulated parking along the Parade chowk stretch make the traffic movement a time-consuming affair.With no designated bus stops in the area, the Matadors and other public transport used to make any available spot as their pick-and-drop location. The intent was to reduce traffic congestion, reclaim footpaths from encroachments, and create safe streets for all.",
+                    "q3": "- Provision of dedicated Matador lanes\n- Demarcating parking zones for 4-wheelers and 2-wheelers\n- Removing redundant poles/fixtures\n- Zebra crossing at regular intervals",
+                    "q4": "- Development of junction on the basis of traffic survey\n- Cleaning and demolition drives\n- Minor repairs and civil works",
+                    "q5": "",
+                    "q6": "The junction has been redesigned on a trial basis and depending upon its success, it will be adopted permanently.",
+                    "q7": "- Jammu Municipal Corporation (procurment of materials and labour)\n- Traffic Police (traffic management)\n- Baba Infra (infrastructure support)"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Harvinder Singh, Jammu Smart City Limited"
+                        },
+                        {
+                            "name": "Deepika Gupta, Jammu Smart City Limited"
+                        },
+                        {
+                            "name": "Gurinder Singh, Jammu Smart City Limited"
+                        },
+                        {
+                            "name": "Umar Shakeel, Jammu Smart City Limited"
+                        }
+                    ],
+                    "orgs": [
+                        {
+                            "name": "Raj Kumar, Jammu Municipal Corporation"
+                        }
+                    ]
+                },
+                "cost": "",
+                "images": [
+                    {
+                        "before": "/Jammu/Jammu_Project1/Photos/B_Jammu_Project1_001.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Enlivened Community Courtyard in Dense Neighbourhood",
+                "code": "P2",
+                "location": "Pacca Danga",
+                "areaLen": "160 sq.m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 6,
+                "noSImages": 2,
+                "description": {
+                    "q1": "The site is located in the middle of the old city area. The space was in a dilapidated condition due to no maintenance and inadequate lighting and needed renovation. There were no appropriate play areas for young children and their caregivers around the site. So the community decided to transform the space into a children's park. ",
+                    "q3": "- Installation and painting of railing and benches\n- Floor painting depicting board games\n- Installation of pencil-shaped colorful MS barriers to conceal the existing transformer",
+                    "q4": "Day 1:\nCleaning of site and making of floor games\nDay 2:\nInstallation of MS barriers and painting of floor\nDay 3:\nPainting of MS barriers and furniture",
+                    "q5": "",
+                    "q6": "The park has been provided with these features as permanent interventions which could be replicated in other similar areas of the city.",
+                    "q7": "- Jammu Municipal Corporation (procurement of materials and labour)\n- RSB Infra (infrastructure support)"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Harvinder Singh, Jammu Smart City Limited"
+                        },
+                        {
+                            "name": "Deepika Gupta, Jammu Smart City Limited"
+                        },
+                        {
+                            "name": "Saddam Husain, Jammu Smart City Limited"
+                        },
+                        {
+                            "name": "Umar Shakeel, Jammu Smart City Limited"
+                        }
+                    ],
+                    "orgs": [
+                        {
+                            "name": "Sameer, Jammu Municipal Corporation"
+                        }
+                    ]
+                },
+                "cost": "",
+                "images": [
+                    {
+                        "before": "/Jammu/Jammu_Project2/Photos/B_Jammu_Project2_001.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "Kakinada": {
+        "state": "Andhra Pradesh",
+        "projects": [
+            {
+                "name": "Pedestrian Eat Street with Toddler Zone",
+                "code": "P1",
+                "location": "PR College, Eat Street",
+                "areaLen": "220 metres ",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 12,
+                "noSImages": 6,
+                "description": {
+                    "q1": "This street is located in the heart of the city with a chain of eateries and recreational spaces. Due to the lack of traffic calming measures and adequate lighting, it became unsafe for pedestrians, especially children. The menace of cattle grazing & stray dogs and lack of seating spaces also deterred the local residents to visit the street. It was recommended to reconfigure the street by adding toddler's island at one end and eatery zone on the other, to enhance the overall pedestrian and retail experience.",
+                    "q3": "- Creation of toddler zone on the island\n- Creation of play facilities for children on the street\n- Permanent blocking of road between the footpath and toddler island with bollards\n- Painting of pedestrian crossing and other traffic calming elements\n- Installation of permanent shading facilities",
+                    "q4": "Day 1:\nInstallation of traffic protection elements on site\nDay 2:\nPainting of floor elements and fabrication of shading canopies\nDay 3:\nInstallation of shading canopies and completion of painting work",
+                    "q5": "Continuous heavy rains hampered the progress at the site.",
+                    "q6": "Based on the response and feedback of the citizens, the city is aiming to permanently close this stretch for traffic and create a pedestrian plaza. It is also in talks with different stakeholders to replicate these interventions across many other RWA parks and  primary health care centres.",
+                    "q7": "- Kakinada Municipal Corporation (procurement of materials and labour)\n- Traffic Police (re- routing traffic)\n- PR College (volunteers for transformation)"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Shrivan Wattamwar, KSCCL"
+                        },
+                        {
+                            "name": "Naushad Ahmad (KSCCL)"
+                        },
+                        {
+                            "name": "PVV Satyanarayana, KSCCL"
+                        },
+                        {
+                            "name": "Ravichandra, WRI India"
+                        },
+                        {
+                            "name": "Chandrashekhar, KSCCL"
+                        }
+                    ],
+                    "orgs": [
+                        {
+                            "name": "KMC Staff"
+                        },
+                        {
+                            "name": "PR College Volunteers"
+                        },
+                        {
+                            "name": "Uday Kumar, UD Photo Arts"
+                        }
+                    ]
+                },
+                "cost": 12,
+                "images": [
+                    {
+                        "before": "/Kakinada/Kakinada_Project1/Photos/B_Kakinada_Project1_001.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "ITC Elements at Vivekananda Park",
+                "code": "P2",
+                "location": "Raja Tank, Nookalamma Street",
+                "areaLen": "929 sq.m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 4,
+                "noSImages": 6,
+                "description": {
+                    "q1": "Vivekananda Park is a prominent park in the city, with a scenic walking trail around the lake. Although receiving a high foot fall, few spaces inside the park had been abandoned and lied unutilised. In consultation with the park authorities and local residents, the aim was to activate these dead spaces and create toddler-friendly amenities at the park.",
+                    "q3": "- Activation of dilapidated open air theatre (OAT) through floor painting\n- Creation of trial play track for infants and toddlers\n- Creation of interactive play areas through floor games\n- Creation of toddler zone next to OAT",
+                    "q4": "Day 1:\nCleaning of OAT and minor repair work at site\nDay 2:\nPainting of OAT and adjoining areas\nDay 3:\nCompletion of painting work",
+                    "q5": "Continuous heavy rains and lack of skilled labour hampered the progress at site.",
+                    "q6": "In talks with different stakeholders to replicate these interventions across many other RWA parks and  primary health care centres.",
+                    "q7": "- Kakinada Municipal Corporation ((procurement of materials and labour)\n"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Shrivan Wattamwar, KSCCL"
+                        },
+                        {
+                            "name": "Naushad Ahmad (KSCCL)"
+                        },
+                        {
+                            "name": "PVV Satyanarayana, KSCCL"
+                        },
+                        {
+                            "name": "Ravichandra, WRI India"
+                        },
+                        {
+                            "name": "Chandrashekhar, KSCCL"
+                        }
+                    ],
+                    "orgs": [
+                        {
+                            "name": "KMC Staff"
+                        },
+                        {
+                            "name": "PR College Volunteers"
+                        },
+                        {
+                            "name": "Uday Kumar, UD Photo Arts"
+                        }
+                    ]
+                },
+                "cost": 8.5,
+                "images": [
+                    {
+                        "before": "/Kakinada/Kakinada_Project2/Photos/B_Kakinada_Project2_001.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "Ranchi": {
+        "state": "Jharkhand",
+        "projects": [
+            {
+                "name": "Revitalized Park for Kids with Spice and Herbs Garden",
+                "code": "P1",
+                "location": "Ranchi University, Morabadi",
+                "areaLen": "110 sq.m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 15,
+                "noSImages": 7,
+                "description": {
+                    "q1": "The park, located near Ranchi Municipal Corporation Office, is flanked by Governor's house premises on one side and a busy marketplace on the other. Closed since last 6 years, it was inaccessible due to massive outgrowth of plants, dilapidated structures, infestation of pests, and the slippery condition of walkways within. The aim was to rejuvenate the park by refurbishing existing elements and adding new components for active play and safe recreational environment.",
+                    "q3": "- Different varieties of herbs and spices (saplings)\n- Benches from recycled materials\n- Beautification through bright paints on boundary wall, entrance gate, and access roads \n- Abandoned tyres reused as sitting spaces and play equipments ",
+                    "q4": "Day 1:\nCleaning and disinfection of site area, dismantling of unwanted structures.\nDay 2:\nRenovation of existing structures and installation of seating & play equipment.\nDay 3:\nPainting and plantation.",
+                    "q5": "",
+                    "q6": "",
+                    "q7": "- WRI India (technical assistant)\n- Bernard van Leer Foundation (technical assistant)\n- Ranchi Municipal Corporation (procurement of materials/labour, and implementation agency)"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Mr. Rupesh Ranjan, Ranchi Municipal Corporation"
+                        },
+                        {
+                            "name": "Mr. Rakesh K. Nandkeolyar, Ranchi Smart City Limited"
+                        }
+                    ],
+                    "orgs": [
+                        {
+                            "name": "Arunima Saha, WRI"
+                        },
+                        {
+                            "name": "Kaustubh Chuke, WRI"
+                        },
+                        {
+                            "name": "Rupesh, RMC  "
+                        },
+                        {
+                            "name": "Pranay, RMC"
+                        },
+                        {
+                            "name": "RMC staff"
+                        },
+                        {
+                            "name": "Rakesh, RSCCL"
+                        }
+                    ]
+                },
+                "cost": 12.25,
+                "images": [
+                    {
+                        "before": "/Ranchi/Ranchi_Project1/Photos/B_Ranchi_Project1_001.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "Srinagar": {
+        "state": "Jammu Kashmir",
+        "projects": [
+            {
+                "name": "Pop-up Plaza from Reclaimed Street",
+                "code": "P2",
+                "location": "Regal Chowk",
+                "areaLen": "7745 sq.m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 12,
+                "noSImages": 5,
+                "description": {
+                    "q1": "Regal Chowk is located in the CBD of Srinagar city. It has a park on one side and commercial area on the other side. The junction was mostly covered with parking on both sides hindering access to the park as well as the pedestrian movement across. The lack of proper crossing, refuge areas and public spaces made it chaotic and unsafe for pedestrians. So the intent was to convert the road in front of the park into a vibrant open public plaza for people. The intervention will provide safe access to the park and create vibrant open space for all age groups.",
+                    "q3": "- Creating open public plaza on road in front of the park\n- Enhancing the entry to the park\n- Creating interactive and vibrant spaces in the plaza\n- Placing games and colorful elements for children",
+                    "q4": "Pre-execution:\nDesign competition  was held with School of Architecture, Kashmir and Islamic University of Science & Technology, Awantipora.\nDay 1 (morning):\nCleaning of site and placement of bollards.\nDay 1 (night):\nPainting of base coat on the road surface.\nDay 2:\nMarking of design elements and installation of play elements made of scrap and reusable material.",
+                    "q5": "The Smart City SPV had only three members to plan and execute two transformations in two weeks time. So after selecting the site, SSCL conducted a design charade with students from School of Architecture, Kashmir and Islamic University of Science & Technology, Awantipora. This collaboration provided arrange of ideas as well as volunteers to undertake the placemaking in 75 hours. ",
+                    "q6": "The city plans to install traffic calming measures and signals at all major junctions and crossings, reimagine roads for pedestrians and cyclists and reclaim as much road space space as possible for plazas and parks. In addition,  the one time collaboration between the SPV and universities is being converted into a permanent engagement with a MoU.",
+                    "q7": "- Srinagar Municipal Corporation (procurement of materials and labour)\n- Traffic Department (traffic management)\n- J&K Police (ensuring safety and secity)\n- School of Architecture, Kashmir (design support and volunteering for execution)\n- Islamic Univercity of Science & Technology, Awantipora (design support and volunteering for execution)"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Anuj Malhotra, Srinagar Smart City Limited "
+                        },
+                        {
+                            "name": "Iftkhar Kakroo, Srinagar Smart City Limited "
+                        },
+                        {
+                            "name": "Zahoor Ahmad Dar, Srinagar Smart City Limited "
+                        },
+                        {
+                            "name": "Suhaib Naqshbandi, Srinagar Smart City Limited "
+                        },
+                        {
+                            "name": "Sabreena Ashraf, Srinagar Smart City Limited (TASU) "
+                        },
+                        {
+                            "name": "Amir Shah, Srinagar Smart City Limited "
+                        }
+                    ],
+                    "orgs": [
+                        {
+                            "name": "Nadia Ali, School of Architecture, Kashmir"
+                        },
+                        {
+                            "name": "Qazi Qamar, Islamic University of Science and Technology, Awantipora"
+                        }
+                    ]
+                },
+                "cost": "",
+                "images": [
+                    {
+                        "before": "/Srinagar/Srinagar_Project2/Photos/B_Srinagar_Project2_001.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Pop-up Plaza at Sher-e-Kashmir Park Intersection",
+                "code": "P1",
+                "location": "Intersection of Residency Road and Gupkar Road",
+                "areaLen": "1000 sq.m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 3,
+                "noSImages": 5,
+                "description": {
+                    "q1": "The three legged junction outside Sher-e-Kashmir park had unauthorized parking that blocked the park entrance, did not have a crossing for pedestrians to cross, no lighting at night for safety and the road space was highly underutilized. With a one minute walk to Jhelum riverfront, the intersection is also surrounded with cafes and sports facilities that witnesses high footfall from tourists and college students. Thus, the intersection was proposed to be improved with a pop-up plaza to make the park entrace more visible, improve vehicular traffic flow and reclaim undertilized space for better public use. ",
+                    "q3": "- Provision of proper zebra crossings.\n- Pop-up plaza with lighting, seating and interactive play for children\n",
+                    "q4": "Pre-execution-  Design competition was held with the students of School of Architecture, Kashmir and Islamic University of Science & Technology, Awantipora.\nDay 1 (moning): \nCleaning, demolition, concreting and removal of railing\nDay 1 (night):\nBollard fixing, base coating, and marking the crossing\nDay 2:\nInstallation and creation of elements using scrap and reusable materials, seating and plantation",
+                    "q5": "The Smart City SPV had only three members to plan and execute two tranformations in two weeks time. So after selecting the site, SSCL conducted a design charade with students from School of Architecture, Kashmir and Islamic University of Science & Technology, Awantipora. This collaboration provided arange of ideas as well as volunteers to undertake the placemaking in 75 hours. ",
+                    "q6": "The city plans to install traffic calming measures and signals at all major junctions and crossings, reimagine roads for pedestrians and cyclists and reclaim as much road space space as possible for plazas and parks. In addition,  the one time collaboration between the SPV and universities is being converted into a permanent engagement with a MoU.",
+                    "q7": "- Srinagar Municipal Corporation (procurement of materials and labour)\n- Traffic Department (traffic management)\n- J&K Police (ensuring safety and secity)\n- School of Architecture, Kashmir (design support and volunteering for execution)\n- Islamic Univercity of Science & Technology, Awantipora (design support and volunteering for execution)"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Anuj Malhotra, Srinagar Smart City Limited "
+                        },
+                        {
+                            "name": "Iftkhar Kakroo, Srinagar Smart City Limited "
+                        },
+                        {
+                            "name": "Zahoor Ahmad Dar, Srinagar Smart City Limited "
+                        },
+                        {
+                            "name": "Suhaib Naqshbandi, Srinagar Smart City Limited "
+                        },
+                        {
+                            "name": "Sabreena Ashraf, Srinagar Smart City Limited (TASU) "
+                        },
+                        {
+                            "name": "Amir Shah, Srinagar Smart City Limited "
+                        }
+                    ],
+                    "orgs": [
+                        {
+                            "name": "Nadia Ali, School of Architecture, Kashmir"
+                        },
+                        {
+                            "name": "Qazi Qamar, Islamic University of Science and Technology, Awantipora"
+                        }
+                    ]
+                },
+                "cost": "",
+                "images": [
+                    {
+                        "before": "/Srinagar/Srinagar_Project1/Photos/B_Srinagar_Project1_001.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "Udaipur": {
+        "state": "Rajasthan",
+        "projects": [
+            {
+                "name": "Interactive community spaces at waterfront street",
+                "code": "P1",
+                "location": "Indira Gandhi Kachi Basti, Govardhan Sagar",
+                "areaLen": "100 m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 8,
+                "noSImages": 0,
+                "description": {
+                    "q1": "Indira Gandhi Kachi Basti is an unplanned low income neighborhood with high population density. The colony lacked any open community space for children to play and families to gather. The street between this neighborhood and Govardhan Sagar lake provided a challenging opportunity to test placemaking interventions. This street had non-uniform carriage way and lacked any medians and predestrian corssings. Therefore, it was decided to reorganise the street and introduce play elements for children.",
+                    "q3": "- Demarcation of uniform carriage way and pedestrian lanes\n- Creation of social interactive spaces using waste materials and play pockets for children\n- Wall painting to educate kids in the neighbourhood \n- Installing swings for the physical development of kids",
+                    "q4": "Day 1:\nDiscussions with residents of the community. Line marking of site and minor civil work.\nDay 2:\nMarking of road carriageway using thermoplastic paint and placemaking area by engaging the community.\nDay 3:\nInstallation of traffic calming elements and plantation drive.",
+                    "q5": "Continuous traffic and rains proved to be major challenges during the 3 days of execution.",
+                    "q6": "This particular stretch is 25% of the total site. If successfully implemented it will be scaled up to cover the full site. ",
+                    "q7": "-Bernard van Leer Foundation"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Nilabh Saxena, IAS, Udaipur Smart City Limited"
+                        },
+                        {
+                            "name": "Akhilesh Tank, Bernard van Leer Foundation"
+                        }
+                    ],
+                    "orgs": []
+                },
+                "cost": 4,
+                "images": [
+                    {
+                        "before": "/Udaipur/Udaipur_Project1/Photos/B_Udaipur_Project1_001.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Transforming Pahari Bus Stand at Chetak Circle into a safer and healthier public space",
+                "code": "P2",
+                "location": "Chetak Circle",
+                "areaLen": "250 m,\n4500 sq.m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 8,
+                "noSImages": 0,
+                "description": {
+                    "q1": "The street plays a vital role in city's commutation and connects important landmarks such as Saheliyon ki Bari, UIT Office, Lok Kala Mandal, and Sukhadiya Circle. The site acted as an unauthorized parking place for private buses, taxis/tempos, and shopkeepers' vehicles. Numerous vehicles, hand-carts, labourers, and shoppers used to merge together on streets, creating unsafe and chaotic conditions for movement. The nearby roadways' bus stop also needs a proper channel for bus mobility. The purpose of  was not only solve the current issues of this site but also inspire and encourage citizens to create similar interactive public spaces across the city.",
+                    "q3": "- Creation of dedicated zones for parking and street vendors\n- Introducing traffic calming elements for pedestrian safety\n- Creating interactive zone for community engagement",
+                    "q4": "Day 1:\nSite cleaning and reorganizing. Demarcation of the footpath, vendor zone, and parking on site.\nDay 2:\nJunction and median demarcation with temporary traffic management elements.\nDay 3:\nPainting pop up colors in the plaza & footpath, wall paintings, and murals. Installation of street furniture and canopies.",
+                    "q5": "Due to the current haphazard site conditions, it was difficult to document the site which was rectified with the help of smart city and municipal corporation.",
+                    "q6": "Yes, the city plans to scale similar placemaking interventions at busy streets and plazas, in order to create safe walkways for pedestrian movement.",
+                    "q7": "-SR Design Consultants \n-Bordia & Associates"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Nilabh Saxena, IAS, Udaipur Smart City Limited"
+                        },
+                        {
+                            "name": "Apoorva Parashar, DTP"
+                        },
+                        {
+                            "name": "Rajendra Menaria, SRDC"
+                        }
+                    ],
+                    "orgs": []
+                },
+                "cost": 7.5,
+                "images": [
+                    {
+                        "before": "/Udaipur/Udaipur_Project2/Photos/B_Udaipur_Project2_001.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "Vadodara": {
+        "state": "Gujarat",
+        "projects": [
+            {
+                "name": "Developing outdoor play area and revamping of Under the Bridge Anganwadi at Vadsar",
+                "code": "P1",
+                "location": "Vadsar Flyover",
+                "areaLen": "600 sq.m",
+                "tags": [
+                    "Street",
+                    "Parking"
+                ],
+                "noGImages": 11,
+                "noSImages": 9,
+                "description": {
+                    "q1": "The site, located in a dense neighborhood, is an abused space under the flyover. Piles of litter and haphazard encroachments had rendered the space unusable for local residents. An anganwadi is also located in the close vicinity under the flyover. The site was used for multiple activities and remained occupied by vehicular parking throughout the day. The corners and vacant pockets were used for dumping of trash and anti-social activities at night. In discussion with anganwadi workers and the community it was decided to extend the anganwadi premise for young children to play and learn. ",
+                    "q3": "- Extension of anganwadi premises to allow outdoor learning and play for young children\n- Creation of sandpit for free play and an amphitheatre for events for children\n- Painting of interactive and educational murals on flyover columns\n- Installation of furniture in-line with BaLA (Building as Learning Aid) concept\n- Creation of green pockets that will act as carbon filters",
+                    "q4": "Pre-execution:\nCollaboration with architecture and urban design studios and technical experts for design and technical feasibility. Consultation with stakeholders such as anganwadi teachers, parents, and the residents to develop a democratic design.\nDay 1:\nClearing of site with the support of local students, volunteers, and helpers.\nDay 2:\nFinishing of mural artwork and levelling of the ground.\nDay 3:\nFabrication and installation of railings and furniture elements.",
+                    "q5": "Rains and thunderstorms interrupted the mobility and logistics of the resources but as the site was under the bridge it acted as a protection from the extreme rain.",
+                    "q6": "Yes, the city aims to identify similar spots across the city, conduct stakeholder discussions to identify issues, and execute similar solutions with the help of volunteers.",
+                    "q7": "- WRI India\n- Bernard van Leer Foundation\n- SMAID - College of Architecture & Design\n- Local Anganwadi\n- Office of the Executive Engineer, South Zone- Central Store Department"
+                },
+                "team": {
+                    "teamImg": "",
+                    "members": [
+                        {
+                            "name": "Priyank Shah, VSCDL"
+                        },
+                        {
+                            "name": "Anushree Patil, WRI India"
+                        },
+                        {
+                            "name": "Jyoti Gill, SMAID"
+                        },
+                        {
+                            "name": "Pavana Hegde, Meraki Design Studio"
+                        }
+                    ],
+                    "orgs": [
+                        {
+                            "name": "Akash Mevada, Meraki Design Studio"
+                        },
+                        {
+                            "name": "Nitish Jain, Panache"
+                        },
+                        {
+                            "name": "Deven Parekh, SMAID"
+                        },
+                        {
+                            "name": "Rajesh Chauhan, VMC"
+                        },
+                        {
+                            "name": "Anup Prajapati, VMC"
+                        }
+                    ]
+                },
+                "cost": 9.85,
+                "images": [
+                    {
+                        "before": "/Vadodara/Vadodara_Project1/Photos/B_Vadodara_Project1_001.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+}

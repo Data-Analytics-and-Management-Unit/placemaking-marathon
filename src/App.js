@@ -1,5 +1,6 @@
-import React, {Suspense} from 'react';
+import React, {Suspense, useEffect, useState} from 'react';
 import {useTranslation} from "react-i18next";
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
@@ -22,16 +23,29 @@ function HeaderComponent()
 }
 
 function App() {
+
+	const [cityData, setCityData] = useState({})
+
+	useEffect(() => {
+        // fetch('https://gist.githubusercontent.com/upperwal/98773fc01a4f53cddfc07cb94c5f4ed0/raw/placemaking_data.json')
+        fetch('/data.json')
+            .then(res => res.json())
+            .then(res => {
+                console.log(res)
+                setCityData(res)
+            })
+    }, [])
+
 	return (
 		<Suspense fallback="loading">
 			<div className="App">
 				<Router>
 					<Switch>
 						<Route exact path="/">
-							<Home/>
+							<Home cityData={cityData}/>
 						</Route>
-						<Route path="/city">
-							<CityPage/>
+						<Route path="/p/:cityName/:projectIndex">
+							<CityPage cityData={cityData}/>
 						</Route>
 						<Route path="/feedback">
 							<FeedbackForm/>

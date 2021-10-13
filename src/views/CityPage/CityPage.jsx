@@ -1,102 +1,243 @@
+import {useLayoutEffect, useEffect, useState} from 'react';
+import {useParams} from "react-router-dom";
 import { Timeline } from 'react-twitter-widgets';
+
+import LocationIcon from '../../img/location_icon.svg';
+import RupeeIcon from '../../img/rupee_icon.svg';
+import ContactIcon from '../../img/contact_icon.svg';
 
 import './CityPage.scss';
 
-function CityPageHero() {
+function CityPageHero(props) {
+
+    function renderCarousel() {
+        let resButton = [], resDiv = []
+        let imgIdx = parseInt(props.projectIndex) + 1
+        resButton = [
+            <button type="button" data-bs-target="#carouselCityProfile" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 0"></button>,
+            <button type="button" data-bs-target="#carouselCityProfile" data-bs-slide-to="1" className="" aria-current="false" aria-label="Slide 1"></button>
+        ]
+        resDiv = [
+            <div className="carousel-item active" data-bs-interval="4000">
+                <div className="before-after-container">
+                    {/* <div className="time-tag">
+                        BEFORE
+                    </div> */}
+                    <img src={"/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/Before.jpg"} className="d-block-inline w-100" alt="..."/>
+                </div>
+            </div>,
+            <div className="carousel-item" data-bs-interval="6000">
+                <div className="before-after-container">
+                    {/* <div className="time-tag">
+                        AFTER
+                    </div> */}
+                    <img src={"/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/After.jpg"} className="d-block-inline w-100" alt="..."/>
+                </div>
+            </div>
+        ]
+
+        for(let idx=0; idx < props.noGImages; idx++) {
+            resButton.push(
+                <button type="button" data-bs-target="#carouselCityProfile" data-bs-slide-to={idx + 2} className="" aria-current="false" aria-label="Slide 1"></button>
+            )
+            resDiv.push(
+                <div className="carousel-item" data-bs-interval="6000">
+                    <img src={"/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/Gallery_" + (idx+1) + ".jpg"} className="d-block-inline w-100" alt="..."/>
+                </div>
+            )
+        }
+        // props.images.forEach((i, idx) => {
+        //     resButton.push(
+        //         <button key={idx} type="button" data-bs-target="#carouselCityProfile" data-bs-slide-to={idx} className={idx === 0 ? "active": ""} aria-current={idx === 0 ? "true": ""} aria-label={"Slide " + (idx+1)}></button>
+        //     )
+        //     let imgIdx = parseInt(props.projectIndex) + 1
+        //     resDiv.push(
+        //         <div key={idx} className={idx === 0 ? "carousel-item active": "carousel-item"}>
+        //             <img src={"/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/Before.jpg"} className="d-block-inline w-50" alt="..."/>
+        //             <img src={"/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/After.jpg"} className="d-block-inline w-100" alt="..."/>
+        //         </div>
+        //     )
+        // })
+
+        return ([
+            resButton, resDiv
+        ])
+    }
+
     return (
         <div className="CityPageHero">
-            <div className="image-panel-container">
-                <div id="custCarousel" className="carousel slide" data-ride="carousel" align="center">
-                    <div className="carousel-inner">
-                        <div className="carousel-item active"> 
-                            <img src="/img/city/city_compare.jpg" alt="Hills"/> 
-                        </div>
-                        <div className="carousel-item"> 
-                            <img src="https://i.imgur.com/Rpxx6wU.jpg" alt="Hills"/> 
-                        </div>
-                        <div className="carousel-item"> 
-                            <img src="https://i.imgur.com/83fandJ.jpg" alt="Hills"/> 
-                        </div>
-                        <div className="carousel-item"> 
-                            <img src="https://i.imgur.com/JiQ9Ppv.jpg" alt="Hills"/> 
-                        </div>
-                    </div> 
-                    <a className="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span className="carousel-control-prev-icon"></span> </a> <a className="carousel-control-next" href="#custCarousel" data-slide="next"> <span className="carousel-control-next-icon"></span> </a>
-                    <ol className="carousel-indicators list-inline">
-                        <li className="list-inline-item active"> 
-                            <a id="carousel-selector-0" className="selected" data-slide-to="0" data-target="#custCarousel"> 
-                                <img src="https://i.imgur.com/weXVL8M.jpg" className="img-fluid"/> 
-                            </a> 
-                        </li>
-                        <li className="list-inline-item"> 
-                            <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> 
-                                <img src="https://i.imgur.com/Rpxx6wU.jpg" className="img-fluid"/> 
-                            </a> 
-                        </li>
-                        <li className="list-inline-item"> 
-                            <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> 
-                                <img src="https://i.imgur.com/83fandJ.jpg" className="img-fluid"/> 
-                            </a> 
-                        </li>
-                        <li className="list-inline-item"> 
-                            <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> 
-                                <img src="https://i.imgur.com/JiQ9Ppv.jpg" className="img-fluid"/> 
-                            </a> 
-                        </li>
-                    </ol>
-                </div>
+            <a href="/#">
+                <img className="city-akam-logo" src={"/logos/" + props.cityName + "_AKAM_PM_Col.svg"} alt="" />
+            </a>
+            <div id="carouselCityProfile" className="carousel slide carousel-fade" data-bs-ride="carousel">
+                {renderCarousel()}
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselCityProfile" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselCityProfile" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     )
 }
 
-function CityPage() {
+function CityPage(props) {
+    
+    const {cityName, projectIndex} = useParams();
+    const [projectData, setProjectData] = useState({})
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
+    useEffect(() => {
+        if(Object.keys(props.cityData).length !== 0) {
+            setProjectData(props.cityData[cityName].projects[projectIndex])
+        }
+    }, [props.cityData])
+
+    function renderDescQuestionAnswer(q, a) {
+        if(a !== '') {
+            return (
+                <>
+                    <h3>{q}</h3>
+                    <p>{a}</p>
+                </>
+            )
+        }
+    }
+
+    function renderDescription(desc) {
+        return (
+            <div className="description-qa">
+                {renderDescQuestionAnswer(
+                    "Why was this site selected for the placemaking marathon?",
+                    desc.q1
+                )}
+                {renderDescQuestionAnswer(
+                    "What were the key interventions undertaken in 75 hours of the placemaking marathon?",
+                    desc.q3
+                )}
+                {renderDescQuestionAnswer(
+                    "How did the team execute this in 75 hours?",
+                    desc.q4
+                )}
+                {renderDescQuestionAnswer(
+                    "What were the major challenges faced and how were they mitigated?",
+                    desc.q5
+                )}
+                {renderDescQuestionAnswer(
+                    "Are there any plans to scale up these interventions across the city?",
+                    desc.q6
+                )}
+                {renderDescQuestionAnswer(
+                    "Which organizations/departments did you seek support from and what were their roles?",
+                    desc.q6
+                )}
+            </div>
+        )
+        // if(!desc) {
+        //     return
+        // }
+        // let res = []
+        // desc.forEach((d, idx) => {
+        //     res.push(
+        //         <p key={idx}>{d}</p>
+        //     )
+        // })
+
+        // return res
+    }
+
+    function renderTeamLogo(noSImages, cityName, projectCode) {
+        let res = []
+        for(let i=0; i<noSImages; i++) {
+            res.push(
+                <div key={i} className="col-md-4">
+                    <img src={"/img/city/" + cityName + "_" + projectCode + "_SH/SH_" + (i+1) + ".jpg"} alt="" />
+                </div>
+            )
+        }
+
+        return res
+    }
+
+    function renderTeamNames(names) {
+        let res = []
+        names.forEach((n, idx) => {
+            res.push(
+                <div key={idx} className="col-md-4">
+                    <h4>{n.name}</h4>
+                </div>
+            )
+        })
+
+        return res
+    }
+
+    console.log(projectData)
+
+    if(Object.keys(projectData).length === 0) {
+        return(<h1></h1>)
+    }
     return (
+        <>
+        <CityPageHero noGImages={projectData.noGImages} cityName={cityName} projectIndex={projectIndex}/>
+        
+
+
         <div className="CityPage">
-            <CityPageHero/>
+            
             <div className="project-container">
                 <div className="container">
-                    <h1>Park For Specially Abled</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a velit 
-scelerisque nunc posuere faucibus non sit amet eros. In vitae nulla nec ligula 
-facilisis luctus non id nunc. In eleifend ante ut dolor viverra, pretium pretium 
-justo egestas. Ut nec lectus accumsan nunc malesuada dapibus. Morbi 
-maximus nisi id mauris blandit convallis. Vivamus venenatis sit amet leo vel 
-semper. Proin eu iaculis magna. Fusce in auctor lorem. Aliquam in diam magna. 
-Suspendisse ultrices enim sed tellus consectetur ultrices. Ut luctus vestibulum 
-posuere. Pellentesque tristique pretium efficitur.
-</p><p>
-Duis eleifend leo et dolor luctus sodales. Nulla auctor luctus volutpat. 
-Suspendisse ornare sit amet felis id laoreet. Nam odio risus, faucibus a vehicula 
-non, rutrum et ipsum. Vivamus a erat at magna tincidunt accumsan a eget 
-nunc. Cras volutpat quam non tellus hendrerit egestas. Donec efficitur 
-consectetur laoreet. Donec a nisl in turpis ultricies venenatis sed eget nisl.</p>
+                    <h1>{projectData.name}</h1>
+                    <div className="info-container">
+                        <div className="info">
+                            <div className="icon-container">
+                                <img src={LocationIcon} alt="" />
+                            </div>
+                            <div className="value-container">
+                                {projectData.location}
+                            </div>
+                        </div>
+                        <div className="info">
+                            <div className="icon-container">
+                                <img src={RupeeIcon} alt="" />
+                            </div>
+                            <div className="value-container">
+                                {projectData.cost} Lakh
+                            </div>
+                        </div>
+                        {/* <div className="info">
+                            <div className="icon-container">
+                                <img src={ContactIcon} alt="" />
+                            </div>
+                            <div className="value-container">
+                                40,000
+                            </div>
+                        </div> */}
+                    </div>
+                    {renderDescription(projectData.description)}
                 </div>
                 <div className="section-container">
                     <div className="container">
                         <h2>Meet the team behind the initiative</h2>
                         <div className="row team-logo">
-                            <div className="col-md-6">
-                                <img src="/img/city/wri.png" alt="" />
-                            </div>
-                            <div className="col-md-6">
-                                <img src="/img/city/itdp.png" alt="" />
-                            </div>
+                            {renderTeamLogo(projectData.noSImages, cityName, projectData.code)}
                         </div>
                     </div>
-                    <img className="team-img" src="/img/city/team_img.jpg" alt="" />
+                    {() => {
+                        if(projectData.team.teamImg) {
+                            return <img className="team-img" src={projectData.team.teamImg} alt="" />
+                        }
+                    }}
                     <div className="team-name-container">
                         <div className="container">
                             <div className="row">
-                                <div className="col-md-4">
-                                    <span className="member-name">Harsh Kakkar</span>
-                                </div>
-                                <div className="col-md-4">
-                                    <span className="member-name">Harsh Kakkar</span>
-                                </div>
-                                <div className="col-md-4">
-                                    <span className="member-name">Harsh Kakkar</span>
-                                </div>
+                                {renderTeamNames(projectData.team.members)}
                             </div>
                         </div>
                     </div>
@@ -116,15 +257,16 @@ consectetur laoreet. Donec a nisl in turpis ultricies venenatis sed eget nisl.</
                     </div>
                 </div> */}
 
-                <div className="tweet-container">
+                {/* <div className="tweet-container">
                     <h2>Citizen Feedback</h2>
                     <div className="tweet-timeline">
                         <Timeline dataSource={{ sourceType: "profile", screenName: "AmritMahotsav" }} />
                     </div>
-                </div>
+                </div> */}
                 
             </div>
         </div>
+        </>
     )
 }
 

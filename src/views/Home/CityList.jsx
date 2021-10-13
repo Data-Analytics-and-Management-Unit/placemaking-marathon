@@ -6,7 +6,7 @@ import CityCardGrid from './CityCardGrid';
 
 import SearchIcon from '../../img/search_icon.svg';
 
-function CityList() {
+function CityList(props) {
     const [alignment, setAlignment] = useState('grid');
     const [searchInput, setSearchInput] = useState(undefined)
 
@@ -16,11 +16,11 @@ function CityList() {
 
     return (
         <div className="CityList">
-            <div className="container">
+            {/* <div className="container">
                 <h1 className="text-center">How are <span className="highlight">cities</span> contributing to placemaking?</h1>
                 <div className="control-container">
                     <div className="row">
-                        {/* <div className="col-md-5">
+                        <div className="col-md-5">
                             <ToggleButtonGroup
                                 color="primary"
                                 value={alignment}
@@ -30,7 +30,7 @@ function CityList() {
                                 <ToggleButton value="grid">Grid View</ToggleButton>
                                 <ToggleButton value="map">Map View</ToggleButton>
                             </ToggleButtonGroup>
-                        </div> */}
+                        </div>
                         <div className="col-md-12">
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">
@@ -48,9 +48,9 @@ function CityList() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <CityCardGrid searchInput={searchInput}/>
+            <CityCardGrid searchInput={searchInput} cityData={props.cityData}/>
         </div>
     )
 }

@@ -1,12 +1,11 @@
 
 .Hero {
-    padding: 30px 0;
+    padding: 10px 0;
     width: 100%;
-    height: 100%;
-    background-image: url('../../img/hero_home.png');
+    /* background-image: url('../../img/hero_home.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     .org-logo {
         display: block;
         margin: 0 auto;
@@ -27,19 +26,67 @@
     .org-swachh {
         width: 70%;
     }
-    .placemaking-logo-container {
-        padding: 180px 0px;
-        width: 100%;
-        img {
-            display: block;
-            margin: auto auto;
-            width: 60%;
+    
+    .hero-container {
+        position: relative;
+        padding-top: 10px;
+        height: 500px;
+        .slideshow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            img {
+                position: relative;
+                top: -200px;
+            }
+            /* img {
+                filter: contrast(0%);
+            } */
+            /* img:hover {
+                filter: contrast(50%) grayscale(100%) blur(0px);
+            } */
+        }
+        .placemaking-logo-container {
+            position: absolute;
+            z-index: 9999;
+            padding: 130px 0px;
+            width: 100%;
+            height: 100%;
+            background-color: #00000077;
+            img {
+                display: block;
+                margin: auto auto;
+                width: 60%;
+            }
+        }
+    }
+    .about-container {
+        padding: 40px 0;
+        p {
+            font-size: 1.3rem;
+        }
+        .facts-container {
+            .row {
+                padding-bottom: 15px;
+            }
+        }
+        .facts-img {
+            width: 40px;
+        }
+        .fact-text {
+            display: flex;
+            align-items: center;
+            h5 {
+                margin: 0;
+                font-size: 1.2rem;
+            }
         }
     }
 }
 
 .CityList {
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 30px;
     width: 100%;
     h1 {
@@ -83,25 +130,46 @@
     padding: 20px 0;
     margin-bottom: 40px;
     .CityCard {
-        background-color: #EBEBEB;
-        border: 2px solid #000;
-        margin: 40px 0;
+        position: relative;
+        background-color: #fff;
+        margin-bottom: 60px;
+        height: 300px;
         .city-image-container {
+            position: absolute;
             width: 100%;
-            height: 300px;
+            height: 100%;
             overflow: hidden;
+            border-radius: 4px;
             img {
                 height: 100%;
                 position: relative;
                 left: -50%;
+                -webkit-transition: all 600ms;
+                transition: transform .3s;
+            }
+            img:hover {
+                -webkit-filter: grayscale(60%);
+                transform: scale(1.1);
             }
         }
-        .city-name {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            font-weight: 800;
-            font-size: 1.3rem;
+        .city-name-project-container {
+            position: absolute;
+            bottom: 10px;
+            left: 0px;
+            font-weight: 500;
+            font-size: 0.7rem;
+            .fit-box {
+                margin: 3px 0;
+                padding: 3px 10px;
+                width: fit-content;
+                background-color: #fff;
+                color: #000;
+            }
+            .project-name {
+                width: 95%;
+                font-size: 0.9rem;
+                line-height: 1.1rem;
+            }
         }
         .CardProjectName {
             padding: 15px;
@@ -118,6 +186,7 @@
                 }
             }
             h4 {
+                font-size: 1.3rem;
                 font-weight: 600;
             }
             a {
@@ -125,5 +194,9 @@
                 text-decoration: none;
             }
         }
+    }
+    .filter-container {
+        position: sticky;
+        top: 20px;
     }
 }

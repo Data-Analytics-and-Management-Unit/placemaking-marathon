@@ -3,11 +3,11 @@ import CityList from './CityList';
 
 import './Home.scss';
 
-function Home() {
+function Home(props) {
     return (
         <>
             <Hero/>
-            <CityList/>
+            <CityList cityData={props.cityData}/>
         </>
     )
 }

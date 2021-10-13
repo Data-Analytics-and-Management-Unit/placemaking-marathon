@@ -1,34 +1,31 @@
 .CityPageHero {
-    width: 100%;
-    .image-panel-container, .carousel, .carousel-inner, .carousel-item {
-        width: 100%;
-    }
-    .carousel-item {
-        img {
+    height: 100%;
+    #carouselCityProfile {
+        height: 100%;
+        .carousel-item {
+            height: 100%;
             width: 100%;
+            overflow: hidden;
         }
     }
-    
-    .carousel-indicators {
-        position: static;
-        margin-top: -70px
+    .city-akam-logo {
+        position: absolute;
+        z-index: 999;
+        width: 300px;
+        top: 30px;
+        background-color: #ffffff99;
     }
-    
-    #custCarousel .carousel-indicators>li {
-        width: 100px
-    }
-    
-    #custCarousel .carousel-indicators li img {
-        display: block;
-        opacity: 0.5
-    }
-    
-    #custCarousel .carousel-indicators li.active img {
-        opacity: 1
-    }
-    
-    #custCarousel .carousel-indicators li:hover img {
-        opacity: 0.75
+    .before-after-container {
+        position: relative;
+        .time-tag {
+            position: absolute;
+            z-index: 9999999;
+            bottom: 20px;
+            background-color: #fff;
+            font-size: 1.3rem;
+            font-weight: 800;
+            padding: 6px 15px;
+        }
     }
 }
 
@@ -44,12 +41,37 @@
             font-size: 2.7rem;
             font-weight: 600;
         }
+        h3 {
+            margin-top: 70px;
+            font-size: 2rem;
+        }
         p {
-            padding: 20px 170px;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
+        }
+        .info-container {
+            .info {
+                display: inline-block;
+                border: 1px solid #F38221;
+                border-radius: 2px;
+                width: max-content;
+                margin: 0 10px;
+                .icon-container {
+                    width: max-content;
+                    padding: 5px;
+                    background-color: #F38221;
+                    display: inline-block;
+                    img {
+                        height: 30px;
+                    }
+                }
+                .value-container {
+                    display: inline-block;
+                    padding: 5px;
+                }
+            }
         }
         .section-container {
-            margin: 60px 0;
+            margin: 170px 0;
             .team-img {
                 width: 100%;
             }
@@ -58,7 +80,8 @@
                 img {
                     display: inline-block;
                     margin: auto;
-                    height: 50%;
+                    height: 90px;
+                    margin-bottom: 20px;
                 }
             }
             .team-name-container {
@@ -79,5 +102,8 @@
                 margin: auto;
             }
         }
+    }
+    .description-qa {
+        padding: 0 180px;
     }
 }

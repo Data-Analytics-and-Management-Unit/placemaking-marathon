@@ -1,7 +1,21 @@
 .Footer {
-    background-color: #000;
     font-size: 0.8rem;
     color: #fff;
     text-align: center;
-    padding: 6px 0;
+    width: 100%;
+    .social-container {
+        a {
+            margin: 4px 10px;
+            img {
+                width: 30px;
+                padding: 9px 0;
+            }
+        }
+    }
+    span {
+        background-color: #000;
+        display: block;
+        width: 100%;
+        padding: 6px 0;
+    }
 }

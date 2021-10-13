@@ -1,0 +1,81 @@
+{
+    "pune": {
+        "img": "/img/city/city_card_img.jpg",
+        "state": "Maharastra",
+        "projects": [
+            {
+                "name": "Urban Placemaking in Pune",
+                "tags": ["streets", "cycling"],
+                "description": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a velit scelerisque nunc posuere faucibus non sit amet eros. In vitae nulla nec ligula facilisis luctus non id nunc. In eleifend ante ut dolor viverra, pretium pretium justo egestas. Ut nec lectus accumsan nunc malesuada dapibus. Morbi maximus nisi id mauris blandit convallis. Vivamus venenatis sit amet leo vel semper. Proin eu iaculis magnamFusce in auctor lorem. Aliquam in diam magna. Suspendisse ultrices enim sed tellus consectetur ultrices. Ut luctus vestibulum posuere. Pellentesque tristique pretium efficitur.",
+                    "Duis eleifend leo et dolor luctus sodales. Nulla auctor luctus volutpat. Suspendisse ornare sit amet felis id laoreet. Nam odio risus, faucibus a vehicula non, rutrum et ipsum. Vivamus a erat at magna tincidunt accumsan a eget nunc. Cras volutpat quam non tellus hendrerit egestas. Donec efficitur consectetur laoreet. Donec a nisl in turpis ultricies venenatis sed eget nisl."
+                ],
+                "team": {
+                    "teamImg": "/img/city/team_img.jpg",
+                    "orgLogo": [
+                        "/img/city/wri.png",
+                        "/img/city/itdp.png"
+                    ],
+                    "members": [
+                        {
+                            "name": "Harsh Kakkar"
+                        }
+                    ]
+                },
+                "images": [
+                    {
+                        "before": "/img/city/city_compare.jpg",
+                        "after": "/img/city/city_compare.jpg"
+                    },
+                    {
+                        "before": "/img/city/city_card_img.jpg",
+                        "after": "/img/city/city_compare.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Painting walkways for safer commute",
+                "tags": ["streets", "cycling"]
+            }
+        ]
+    },
+    "surat": {
+        "img": "/img/city/city_card_img.jpg",
+        "projects": [
+            {
+                "name": "Urban Placemaking in Pune",
+                "tags": ["streets", "cycling"]
+            },
+            {
+                "name": "Painting walkways for safer commute",
+                "tags": ["streets", "cycling"]
+            }
+        ]
+    },
+    "varanasi": {
+        "img": "/img/city/city_card_img.jpg",
+        "projects": [
+            {
+                "name": "Urban Placemaking in Pune",
+                "tags": ["streets", "cycling"]
+            },
+            {
+                "name": "Painting walkways for safer commute",
+                "tags": ["streets", "cycling"]
+            }
+        ]
+    },
+    "bangalore": {
+        "img": "/img/city/city_card_img.jpg",
+        "projects": [
+            {
+                "name": "Urban Placemaking in Pune",
+                "tags": ["walking", "air"]
+            },
+            {
+                "name": "Painting walkways for safer commute",
+                "tags": ["water", "fire"]
+            }
+        ]
+    }
+}
