@@ -1,10 +1,10 @@
 import {useLayoutEffect, useEffect, useState} from 'react';
-import {useParams} from "react-router-dom";
-import { Timeline } from 'react-twitter-widgets';
+import {useParams, Link} from "react-router-dom";
+import {renderURL, processCityName} from '../../Config';
 
 import LocationIcon from '../../img/location_icon.svg';
 import RupeeIcon from '../../img/rupee_icon.svg';
-import ContactIcon from '../../img/contact_icon.svg';
+import HomeIcon from '../../img/home_icon.svg';
 
 import './CityPage.scss';
 
@@ -23,7 +23,7 @@ function CityPageHero(props) {
                     {/* <div className="time-tag">
                         BEFORE
                     </div> */}
-                    <img src={"/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/Before.jpg"} className="d-block-inline w-100" alt="..."/>
+                    <img src={renderURL("/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/Before.jpg")} className="d-block-inline w-100" alt="..."/>
                 </div>
             </div>,
             <div className="carousel-item" data-bs-interval="6000">
@@ -31,7 +31,7 @@ function CityPageHero(props) {
                     {/* <div className="time-tag">
                         AFTER
                     </div> */}
-                    <img src={"/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/After.jpg"} className="d-block-inline w-100" alt="..."/>
+                    <img src={renderURL("/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/After.jpg")} className="d-block-inline w-100" alt="..."/>
                 </div>
             </div>
         ]
@@ -42,7 +42,7 @@ function CityPageHero(props) {
             )
             resDiv.push(
                 <div className="carousel-item" data-bs-interval="6000">
-                    <img src={"/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/Gallery_" + (idx+1) + ".jpg"} className="d-block-inline w-100" alt="..."/>
+                    <img src={renderURL("/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/Gallery_" + (idx+1) + ".jpg")} className="d-block-inline w-100" alt="..."/>
                 </div>
             )
         }
@@ -53,8 +53,8 @@ function CityPageHero(props) {
         //     let imgIdx = parseInt(props.projectIndex) + 1
         //     resDiv.push(
         //         <div key={idx} className={idx === 0 ? "carousel-item active": "carousel-item"}>
-        //             <img src={"/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/Before.jpg"} className="d-block-inline w-50" alt="..."/>
-        //             <img src={"/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/After.jpg"} className="d-block-inline w-100" alt="..."/>
+        //             <img src={renderURL("/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/Before.jpg")} className="d-block-inline w-50" alt="..."/>
+        //             <img src={renderURL("/img/city/" + props.cityName + "_P" + imgIdx + "_Photos/After.jpg")} className="d-block-inline w-100" alt="..."/>
         //         </div>
         //     )
         // })
@@ -66,9 +66,12 @@ function CityPageHero(props) {
 
     return (
         <div className="CityPageHero">
-            <a href="/#">
-                <img className="city-akam-logo" src={"/logos/" + props.cityName + "_AKAM_PM_Col.svg"} alt="" />
-            </a>
+            <Link to="/">
+                <img className="city-akam-logo" src={renderURL("/logos/" + props.cityName + "_AKAM_PM_Col.svg")} alt="" />
+            </Link>
+            <Link className="home-icon" to="/">
+                <img src={HomeIcon} alt="" />
+            </Link>
             <div id="carouselCityProfile" className="carousel slide carousel-fade" data-bs-ride="carousel">
                 {renderCarousel()}
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselCityProfile" data-bs-slide="prev">
@@ -100,11 +103,30 @@ function CityPage(props) {
     }, [props.cityData])
 
     function renderDescQuestionAnswer(q, a) {
-        if(a !== '') {
+        if(a && a !== undefined && a !== '') {
+            let res = []
+            a.forEach((para, idx) => {
+                if(para !== '') {
+                    res.push(
+                        <li>{para}</li>
+                    )
+                }
+            })
+            if(res.length === 0) {
+                return
+            }
             return (
                 <>
-                    <h3>{q}</h3>
-                    <p>{a}</p>
+                    <div className="row ques-row">
+                        <div className="col-md-4">
+                            <h3>{q}</h3>
+                        </div>
+                        <div className="col-md-8">
+                            <ul>
+                                {res}
+                            </ul>
+                        </div>
+                    </div>
                 </>
             )
         }
@@ -122,20 +144,24 @@ function CityPage(props) {
                     desc.q3
                 )}
                 {renderDescQuestionAnswer(
+                    "What were the key outcomes of the proposed interventions?",
+                    desc.q8
+                )}
+                {renderDescQuestionAnswer(
                     "How did the team execute this in 75 hours?",
                     desc.q4
                 )}
                 {renderDescQuestionAnswer(
-                    "What were the major challenges faced and how were they mitigated?",
+                    "If there were any challenges, how were they mitigated?",
                     desc.q5
                 )}
                 {renderDescQuestionAnswer(
-                    "Are there any plans to scale up these interventions across the city?",
+                    "Are there any plans to scale up these interventions across the city? Please specify how.",
                     desc.q6
                 )}
                 {renderDescQuestionAnswer(
-                    "Which organizations/departments did you seek support from and what were their roles?",
-                    desc.q6
+                    "Which organizations/ departments did you seek support from and what were their roles?",
+                    desc.q7
                 )}
             </div>
         )
@@ -154,34 +180,121 @@ function CityPage(props) {
 
     function renderTeamLogo(noSImages, cityName, projectCode) {
         let res = []
-        for(let i=0; i<noSImages; i++) {
+        let divSize = '3'
+        let imgList = []
+        let rem = noSImages % 4
+
+        if(noSImages == 0) {
+            return
+        }
+        // if(noSImages < 4) {
+        //     divSize = (12 / noSImages).toString()
+        // }
+        /* for(let i=0; i<noSImages; i++) {
+            if(rem !== 0 && i < rem) {
+                divSize = (12 / rem).toString()
+            } else {
+                divSize = '3'
+            }
             res.push(
-                <div key={i} className="col-md-4">
-                    <img src={"/img/city/" + cityName + "_" + projectCode + "_SH/SH_" + (i+1) + ".jpg"} alt="" />
+                <div key={i} className={"org-logo-container col-md-" + divSize}>
+                    <img src={renderURL("/img/city/" + cityName + "_" + projectCode + "_SH/SH_" + (i+1) + ".jpg")} alt="" />
+                </div>
+            )
+        } */
+
+        for(let i=0; i<noSImages; i++) {
+            imgList.push(
+                <img src={renderURL("/img/city/" + cityName + "_" + projectCode + "_SH/SH_" + (i+1) + ".jpg")} className="w-10" alt="" />
+            )
+            if((i+1) % 5 == 0) {
+                res.push(
+                    <div key={i} class={i < 5 ? "carousel-item active" : "carousel-item"}>
+                        <div className="stakeholder-logo">
+                            {imgList}
+                        </div>
+                    </div>
+                )
+                imgList = []
+            }
+        }
+        if(imgList.length > 0) {
+            res.push(
+                <div key={'last'} class={res.length === 0 ? "carousel-item active" : "carousel-item"}>
+                    <div className="stakeholder-logo">
+                        {imgList}
+                    </div>
                 </div>
             )
         }
 
-        return res
+        return (
+            <div id="carousalStakeholderLogos" className="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div className="carousel-inner">
+                    {res}
+                </div>
+                <button className="carousel-control-prev" type="button" data-bs-target="#carousalStakeholderLogos" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carousalStakeholderLogos" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                </button>
+            </div>
+        )
     }
 
     function renderTeamNames(names) {
         let res = []
         names.forEach((n, idx) => {
             res.push(
-                <div key={idx} className="col-md-4">
+                <div key={idx} className="col-md-6">
                     <h4>{n.name}</h4>
                 </div>
             )
         })
+        
+        if(res.length > 0) {
+            return(
+                <div className="team-name-container">
+                    <div className="container">
+                        <div className="row">
+                            {res}
+                        </div>
+                    </div>
+                </div>
+            )
+        }
+    }
 
-        return res
+    function renderFeedback(cityName, projectData) {
+        if(projectData.feedbackPresent) {
+            return(
+                <div className="section-container">
+                    <div className="container">
+                        <h2>Citizen Views</h2>
+                        <div className="feedback-container">
+                            <img src={renderURL("/img/feedback/" + cityName + "_" + projectData.code + ".jpg")} alt="" />
+                        </div>
+                    </div>
+                </div>
+            )
+        }
+    }
+
+    function renderTeamImage(cityName, projectData) {
+        if(projectData.teamImagePresent) {
+            return(
+                <img className="team-img" src={renderURL("/img/city/" + cityName + "_" + projectData.code + "_Photos/Team.jpg")} alt="" />
+            )
+        }
     }
 
     console.log(projectData)
 
     if(Object.keys(projectData).length === 0) {
-        return(<h1></h1>)
+        return(null)
     }
     return (
         <>
@@ -200,7 +313,7 @@ function CityPage(props) {
                                 <img src={LocationIcon} alt="" />
                             </div>
                             <div className="value-container">
-                                {projectData.location}
+                                {projectData.location + (projectData.location !== '' ? ', ' : '') + processCityName(cityName, 'display')}
                             </div>
                         </div>
                         <div className="info">
@@ -208,7 +321,7 @@ function CityPage(props) {
                                 <img src={RupeeIcon} alt="" />
                             </div>
                             <div className="value-container">
-                                {projectData.cost} Lakh
+                                {projectData.cost ? projectData.cost + ' Lakh' : 'NA'}
                             </div>
                         </div>
                         {/* <div className="info">
@@ -222,6 +335,11 @@ function CityPage(props) {
                     </div>
                     {renderDescription(projectData.description)}
                 </div>
+                
+                
+                {renderFeedback(cityName, projectData)}
+                
+                
                 <div className="section-container">
                     <div className="container">
                         <h2>Meet the team behind the initiative</h2>
@@ -229,18 +347,8 @@ function CityPage(props) {
                             {renderTeamLogo(projectData.noSImages, cityName, projectData.code)}
                         </div>
                     </div>
-                    {() => {
-                        if(projectData.team.teamImg) {
-                            return <img className="team-img" src={projectData.team.teamImg} alt="" />
-                        }
-                    }}
-                    <div className="team-name-container">
-                        <div className="container">
-                            <div className="row">
-                                {renderTeamNames(projectData.team.members)}
-                            </div>
-                        </div>
-                    </div>
+                    {renderTeamImage(cityName, projectData)}
+                    {renderTeamNames(projectData.team.members.concat(projectData.team.orgs))}
                 </div>
 
                 {/* <div className="section-container">

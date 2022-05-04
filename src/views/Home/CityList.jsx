@@ -1,18 +1,13 @@
 import {useState} from 'react';
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import CityCardGrid from './CityCardGrid';
 
-
-import SearchIcon from '../../img/search_icon.svg';
-
 function CityList(props) {
-    const [alignment, setAlignment] = useState('grid');
+    // const [alignment, setAlignment] = useState('grid');
     const [searchInput, setSearchInput] = useState(undefined)
 
-    const handleChange = (event, newAlignment) => {
-        setAlignment(newAlignment);
-    };
+    // const handleChange = (event, newAlignment) => {
+    //     setAlignment(newAlignment);
+    // };
 
     return (
         <div className="CityList">

@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
+import {renderURL, processCityName} from '../../Config';
 
 // function CardProjectName(props) {
 
@@ -43,14 +44,14 @@ function CityCard(props) {
     return(
         <div className="CityCard">
             <div className="city-image-container">
-                <img src={"/img/homepage/" + props.cityName + "_" + props.projectData.code + ".jpg"} alt="" />
+                <img src={renderURL("/img/homepage/" + props.cityName + "_" + props.projectData.code + ".jpg")} alt="" />
             </div>
             <div className="city-name-project-container">
-                <div className="fit-box city-name">
-                    {props.cityName.toUpperCase()}
-                </div>
                 <div className="fit-box project-name">
                     {props.projectData.name}
+                </div>
+                <div className="fit-box city-name">
+                    {processCityName(props.cityName, 'display').toUpperCase()}
                 </div>
             </div>
             
@@ -61,7 +62,6 @@ function CityCard(props) {
 
 function CityCardGrid(props) {
 
-    console.log(props)
     const [cityData, setCityData] = useState({})
     const [category, setCategory] = useState('All')
     const [city, setCity] = useState('All')
@@ -156,7 +156,7 @@ function CityCardGrid(props) {
             })
         })
 
-        let res = [<option value="All">All</option>]
+        let res = [<option key="all" value="All">All</option>]
         Object.keys(tagsObj).forEach((t, idx) => {
             res.push(
                 <option key={idx} value={t}>{t}</option>
@@ -166,10 +166,10 @@ function CityCardGrid(props) {
     }
 
     function renderCities() {
-        let res = [<option value="All">All</option>]
+        let res = [<option key="all" value="All">All</option>]
         Object.keys(cityData).forEach((cityName, idx) => {
             res.push(
-                <option key={idx} value={cityName}>{cityName}</option>
+                <option key={idx} value={cityName}>{processCityName(cityName, 'display')}</option>
             )
         })
         return res
@@ -182,13 +182,13 @@ function CityCardGrid(props) {
                     <div className="col-md-2">
                         <div className="filter-container">
                             <div className="mb-3">
-                                <label for="exampleInputEmail1" className="form-label">Category</label>
+                                <label htmlFor="exampleInputEmail1" className="form-label">Category</label>
                                 <select id="exampleInputEmail1" className="form-select" aria-label="Default select example" onChange={e => {setCategory(e.target.value)}}>
                                     {renderCategories()}
                                 </select>
                             </div>
                             <div className="mb-3">
-                                <label for="exampleInputEmail1" className="form-label">City</label>
+                                <label htmlFor="exampleInputEmail1" className="form-label">City</label>
                                 <select id="exampleInputEmail1" className="form-select" aria-label="Default select example" onChange={e => {setCity(e.target.value)}}>
                                     {renderCities()}
                                 </select>

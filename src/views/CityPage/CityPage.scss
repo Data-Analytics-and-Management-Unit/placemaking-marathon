@@ -8,12 +8,27 @@
             overflow: hidden;
         }
     }
+    .carousel-control-next-icon {
+        background-image: url('../../img/next_icon.svg');
+    }
+    .carousel-control-prev-icon {
+        background-image: url('../../img/prev_icon.svg');
+    }
+    .home-icon {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        z-index: 9999;
+        img {
+            width: 60px;
+        }
+    }
     .city-akam-logo {
         position: absolute;
         z-index: 999;
         width: 300px;
         top: 30px;
-        background-color: #ffffff99;
+        background-color: #ffffff;
     }
     .before-after-container {
         position: relative;
@@ -66,7 +81,8 @@
                 }
                 .value-container {
                     display: inline-block;
-                    padding: 5px;
+                    padding: 5px 14px;
+                    vertical-align: middle;
                 }
             }
         }
@@ -77,15 +93,31 @@
             }
             .team-logo {
                 margin: 40px 0;
+                .org-logo-container {
+                    margin: 20px 0;
+                }
                 img {
                     display: inline-block;
                     margin: auto;
-                    height: 90px;
+                    height: 80px;
                     margin-bottom: 20px;
                 }
             }
+            .stakeholder-logo {
+                img {
+                    display: inline-block;
+                    margin: 0 40px;
+                }
+            }
             .team-name-container {
+                background-color: #E5E5E5;
+                padding: 30px 0;
                 margin: 50px 0;
+                h4 {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    padding: 6px 0;
+                }
             }
         }
         .member-name {
@@ -104,6 +136,29 @@
         }
     }
     .description-qa {
-        padding: 0 180px;
+        margin-top: 70px;
+        padding: 0 80px;
+        text-align: left;
+        .ques-row {
+            margin-bottom: 50px;
+        }
+        h3 {
+            text-align: left;
+            margin: 0;
+            font-size: 1.3rem;
+            line-height: 1.9rem;
+        }
+        li {
+            font-size: 1.3rem;
+            list-style: none;
+        }
     }
+    .feedback-container {
+        width: 70%;
+        margin: auto auto;
+        img {
+            width: 100%;
+        }
+    }
+    
 }

@@ -63,8 +63,14 @@
     }
     .about-container {
         padding: 40px 0;
-        p {
-            font-size: 1.3rem;
+        .about-text {
+            font-weight: 500;
+        }
+        p, li {
+            text-align: justify;
+            font-size: 1.2rem;
+            padding: 0 20px;
+            line-height: 2.1rem;
         }
         .facts-container {
             .row {
@@ -143,7 +149,6 @@
             img {
                 height: 100%;
                 position: relative;
-                left: -50%;
                 -webkit-transition: all 600ms;
                 transition: transform .3s;
             }
