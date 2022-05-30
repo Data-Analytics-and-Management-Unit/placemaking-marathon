@@ -19,3 +19,139 @@ h1 {
 .highlight {
     color: $highlight-color;
 }
+
+@media (max-width: 576px) {
+    .Hero .org-scm {
+        width: 40%;
+    }
+    
+    .Hero .org-akam, .Hero .org-mohua {
+        width: 40%;
+        margin-top: 45px;
+    }
+    .Hero .org-aatam {
+        width: 40%;
+        margin-top: 45px;
+    }
+    .Hero .org-swachh {
+        width: 45%;
+        margin-top: 45px;
+        margin-bottom: 60px;
+        margin-left: 35%;
+    }
+    
+    
+    .Hero .hero-container .slideshow img {
+        position: relative;
+        
+    }
+    
+    .Hero .hero-container .placemaking-logo-container {
+        position: absolute;
+        z-index: 9999;
+        padding: 100px 0;
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    .Hero .hero-container .slideshow img {
+        position: relative;
+        width: 100% !important;
+        height: 400px;
+    }
+    
+    .Hero .hero-container .placemaking-logo-container img {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+    
+    
+    .Hero .hero-container {
+        position: relative;
+        padding-top: 10px;
+        height: 400px;
+    }
+    
+    .about-container h1 {
+        padding: 4%;
+    }
+    .Hero .about-container .facts-img {
+        padding: 2%;
+        width: 20%;
+        margin-left: 25%;
+    }
+    
+    .CityList {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .CityCardGrid .CityCard .city-name-project-container .project-name {
+        width: 80%;
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+    
+    .CityCardGrid .CityCard .city-image-container img {
+        /* height: 100%; */
+        position: relative;
+        transition: -webkit-transform .3s;
+        transition: transform .3s;
+        transition: transform .3s,-webkit-transform .3s;
+    }
+    
+    
+    .CityPageHero, .CityPageHero #carouselCityProfile {
+        height: auto;
+    }
+    
+    .CityPageHero .city-akam-logo {
+        /* position: absolute; */
+        z-index: 999;
+        width: 180px;
+        top: 70px;
+        background-color: #fff;
+    }
+    
+    .CityPage .project-container {
+        margin: 200px 0;
+        text-align: center;
+    }
+    
+    .CityPage .project-container .info-container .info .value-container {
+        display: inline-block;
+        padding: 5px 3px;
+    }
+    
+    .CityPage .description-qa h3 {
+        text-align: left;
+        margin: 0;
+        font-size: 1.2em;
+        line-height: 1.9rem;
+        margin-left: 30px;
+    }
+    .CityPage .description-qa li {
+        font-size: 1em;
+        list-style: none;
+        margin-top: 30px;
+    }
+    .CityPage .description-qa {
+        margin-top: 50px;
+        text-align: left;
+    }
+    .CityPage .description-qa .ques-row {
+        margin-bottom: 30px;
+    }
+    
+    .CityPage .project-container h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    
+    .CityPage .project-container .section-container {
+        margin: 50px 0;
+    }    
+}
+
